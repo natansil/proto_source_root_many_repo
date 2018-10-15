@@ -1,6 +1,6 @@
 proto_library(
     name = "a_proto",
     srcs = ["a_pkg/a.proto"],
-    deps = ["//src:b_proto"],
+    deps = ["@b//src:b_proto"],
     proto_source_root = PACKAGE_NAME,
     )
