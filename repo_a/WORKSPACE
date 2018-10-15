@@ -1,0 +1,18 @@
+local_repository(
+    name = "b",
+    path = "/Users/natans/Work-bazel/proto_source_root_many_repo/repo_b"
+)
+
+http_archive(
+    name = "com_google_protobuf",
+    sha256 = "118ac276be0db540ff2a89cecc5dfb9606d4d16e91cc4ea8883ae8160acb5163",
+    strip_prefix = "protobuf-0456e269ee6505766474aa8d7b8bba7ac047f457",
+    urls = ["https://github.com/google/protobuf/archive/0456e269ee6505766474aa8d7b8bba7ac047f457.zip"],
+)
+
+http_archive(
+    name = "com_google_protobuf_java",
+    sha256 = "118ac276be0db540ff2a89cecc5dfb9606d4d16e91cc4ea8883ae8160acb5163",
+    strip_prefix = "protobuf-0456e269ee6505766474aa8d7b8bba7ac047f457",
+    urls = ["https://github.com/google/protobuf/archive/0456e269ee6505766474aa8d7b8bba7ac047f457.zip"],
+)
