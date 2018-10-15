@@ -2,6 +2,6 @@ package(default_visibility = ["//visibility:public"])
 
 proto_library(
     name = "b_proto",
-    srcs = ["b_pkg/b.proto"],
+    srcs = ["some_package2/b.proto"],
     proto_source_root = PACKAGE_NAME,
     )

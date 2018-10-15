@@ -1,6 +1,6 @@
 local_repository(
     name = "b",
-    path = "/Users/natans/Work-bazel/proto_source_root_many_repo/repo_b"
+    path = "/Users/natans/tmp/proto_source_root_many_repo/repo_b"
 )
 
 http_archive(
@@ -16,3 +16,19 @@ http_archive(
     strip_prefix = "protobuf-0456e269ee6505766474aa8d7b8bba7ac047f457",
     urls = ["https://github.com/google/protobuf/archive/0456e269ee6505766474aa8d7b8bba7ac047f457.zip"],
 )
+
+rules_scala_version="e8328761275fe782c25d098a376ad13cc9e36899" # update this as needed
+local_repository(
+             name = "io_bazel_rules_scala",
+             path = "/Users/natans/Work/rules_scala"
+)
+
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
+scala_repositories()
+
+load("@io_bazel_rules_scala//scala:toolchains.bzl", "scala_register_toolchains")
+scala_register_toolchains()
+
+load("@io_bazel_rules_scala//scala_proto:scala_proto.bzl", "scala_proto_repositories")
+
+scala_proto_repositories()

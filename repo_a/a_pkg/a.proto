@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package a_pkg;
-
-import "b_pkg/b.proto";
-
-message Baz {
-  Foo foo = 1;
-}
