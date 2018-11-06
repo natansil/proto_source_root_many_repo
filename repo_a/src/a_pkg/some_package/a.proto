@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package some_package;
-
 import "some_package2/b.proto";
 
 message Baz {

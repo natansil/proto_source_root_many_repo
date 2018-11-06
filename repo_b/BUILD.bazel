@@ -1,7 +1,0 @@
-package(default_visibility = ["//visibility:public"])
-
-proto_library(
-    name = "b_proto",
-    srcs = ["b.proto"],
-    proto_source_root = PACKAGE_NAME,
-    )

@@ -11,8 +11,3 @@ scalapb_proto_library(
       name = "a_scala_proto",
       deps = [":a_proto"],
   )
-
-java_proto_library(
-      name = "a_java_proto",
-      deps = [":a_proto"],
-  )
